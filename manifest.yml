@@ -1,14 +1,10 @@
 ---
 applications:
-- name: petclinic
-  memory: 512M
+- name: petclinic-wg
+  memory: 1024M
   instances: 1
-  subdomain: petclinic-${random-word}
+  subdomain: petclinicwg1
   domain: cfapps.io
   path: target/pets4u-0.1.war
-  services:
-    petclinic-mysql:
-      label: cleardb
-      provider: cleardb
-      version: n/a
-      plan: spark
+  services: 
+    - petdb 
