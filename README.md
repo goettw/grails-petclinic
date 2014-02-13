@@ -40,4 +40,4 @@ targeting a Cloud Foundry instance, and logging in, the application can be pushe
 
     $ cf push
 
-When using the provided `manifest.yml` file, a MySQL service will be created and bound to the app when it is pushed. You can choose a different MySQL service or a PostgreSQL service to bind to the application. 
+When using the provided `manifest.yml` file, MySQL service will not be created but bound to the app when it is pushed. A service called petdb has to be available.ZZ 
